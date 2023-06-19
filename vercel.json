@@ -1,0 +1,12 @@
+{
+  "routes": [
+    {
+      "src": "/static/(.*)",
+      "dest": "/static/$1"
+    },
+    {
+      "src": "/react/(.*)",
+      "dest": "/react/build/$1"
+    }
+  ]
+}
