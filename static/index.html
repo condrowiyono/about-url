@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Static</title>
+</head>
+<body>
+  <div class="lottie">
+    <div class="lottie__container"></div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
+  
+  <script>
+    var animation = bodymovin.loadAnimation({
+      container: document.querySelector('.lottie__container'),
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: '/static/lottie.json'
+    })
+  </script>
+</body>
+</html>
